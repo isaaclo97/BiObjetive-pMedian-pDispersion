@@ -14,11 +14,25 @@ Quartil: Q2 - 65/145 - Computer Science, Artificial Intelligence - (2021) <br>
 
 ## Datasets
 
-* [pmed instnaces](http://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/)
-* [D250-350 instnaces](https://www.isi.edu/~lerman/downloads/digg2009.html)
+* [pmed instances](http://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/)
+* [D250-350 instances](https://www.isi.edu/~lerman/downloads/digg2009.html)
 * [kmedian instances](https://resources.mpi-inf.mpg.de/departments/d1/projects/benchmarks/UflLib/kmedian.html)
 
-All txt format instances can be found in instances folder.
+All txt format instances can be found in instances folder (some of the instances are in .zip extension due to space demanding).
+
+## Source code
+
+### EpsilonConstraint
+Contains the implementation of the exact models using Gurobi. To use it, it is necessary to have Gurobi installed on the device.
+
+### MOFLP_MOEAMaven
+MOEA Framework is a free and open source Java library for developing and experimenting with multiobjective evolutionary algorithms (MOEAs), this project contains instances parser (be careful, sometimes it is necessary to modify some fields for the correct instance format) of all the algorithms proposed to perform the comparison.
+
+### MOMetricsMaven
+Once the algorithm returns the different pareto fronts, this project is used to analyze the different metrics explained in the article. Given two folders with the pareto fronts of an instance, it reports the metrics obtained with which conclusions can be drawn.
+
+### PMPD
+This proyect has our algorithmic proposal related to Reactive Path Relinking and the different methods as local searches. This code is compiled and build in .jar format. BiObjetive-pMedian-pDispersion.jar is in the root of the project for use without the need to buid the code.
 
 ## Results
 
@@ -27,7 +41,7 @@ All txt format instances can be found in instances folder.
 ### Pareto fronts
 
 Our final pareto fronts can be found in pareto folder.
-All the pareto front generated can be found in [.\code\MOMetricsMaven\test](.\code\MOMetricsMaven\test) 
+All the pareto front generated can be found in [./code/MOMetricsMaven/test](./code/MOMetricsMaven/test) 
 
 ## Executable
 
