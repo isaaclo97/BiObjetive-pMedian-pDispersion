@@ -14,21 +14,61 @@ Quartil: Q2 - 65/145 - Computer Science, Artificial Intelligence - (2021) <br>
 
 ## Datasets
 
-* [Instances pMed](http://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/)
-* [Instances D250-350](https://www.isi.edu/~lerman/downloads/digg2009.html)
+* [pmed instnaces](http://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/)
+* [D250-350 instnaces](https://www.isi.edu/~lerman/downloads/digg2009.html)
+* [kmedian instances](https://resources.mpi-inf.mpg.de/departments/d1/projects/benchmarks/UflLib/kmedian.html)
 
 All txt format instances can be found in instances folder.
+
+## Results
+
+* SOCO_Latex_Tables.xlsx
+
+### Pareto fronts
+
+Our final pareto fronts can be found in pareto folder.
+All the pareto front generated can be found in [.\code\MOMetricsMaven\test](.\code\MOMetricsMaven\test) 
 
 ## Executable
 
 You can just run the BiObjetive-pMedian-pDispersion.jar as follows.
 
 ```
-java -jar BiObjetive-pMedian-pDispersion.jar
+java -jar BiObjetive-pMedian-pDispersion.jar <instances folder> <iterations> <k>
 ```
 
-If you want new instances just replace folder instances.
-Solution folder contains de pareto output per instances.
+For instance:
+
+```
+java -jar BiObjetive-pMedian-pDispersion.jar "instances/pmed"
+java -jar BiObjetive-pMedian-pDispersion.jar "instances/kmedian" 10
+java -jar BiObjetive-pMedian-pDispersion.jar "instances/D250-350" 10 0.5
+```
+
+instances folder per default is ../../instances/kmedian<br>
+Iterations per default is 100.<br>
+k per default is 0.75<br>
+
+## Extra tool
+
+### Pareto Comparator
+
+The file paretoComparator.py analice two different pareto folders with different methods.
+
+- Generate PDF file with the different graphics (RPRvsNSGA2.pdf)
+- Extract PGN files individually per instances (folder images)
+- Analize just one pareto file in folder
+
+The requirements are:
+
+| Package        | Minimum Version | Installation  |
+|-----------| -----------------|-----------------|
+| plotly | >=5.8.1	 | pip install plotly |
+| fpdf | >=1.7.2    | pip install fpdf |
+| numpy | >=1.22.4	| pip install numpy |
+
+
+The paretos folder must have the same file names.
 
 ## Cite
 

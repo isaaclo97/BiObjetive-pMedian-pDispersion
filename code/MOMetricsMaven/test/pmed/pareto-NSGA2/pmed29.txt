@@ -1,0 +1,2 @@
+pMedian	pDispersion
+3802.0	4.0
