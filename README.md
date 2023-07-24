@@ -1,4 +1,4 @@
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=isaaclo97.BiObjetive-pMedian-pDispersion&color=be54c6&style=flat&logo=Github)
+![visitor badge](https://vbr.wocr.tk/badge?page_id=isaaclo97.BiObjetive-pMedian-pDispersion&color=be54c6&style=flat&logo=Github)
 ![Manintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 ![GitHub last commit (master)](https://img.shields.io/github/last-commit/isaaclo97/BiObjetive-pMedian-pDispersion)
 ![Starts](https://img.shields.io/github/stars/isaaclo97/BiObjetive-pMedian-pDispersion.svg)
@@ -9,8 +9,8 @@ This paper deals with an interesting facility location problem known as the bi-o
 
 Paper link: [https://link.springer.com/article/10.1007/s00500-023-07994-4](https://link.springer.com/article/10.1007/s00500-023-07994-4) <br>
 DOI: [https://doi.org/10.1007/s00500-023-07994-4](https://doi.org/10.1007/s00500-023-07994-4) <br>
-Impact Factor: 3.732 (2021)  <br>
-Quartil: Q2 - 65/145 - Computer Science, Artificial Intelligence - (2021) <br>
+Impact Factor: 4.100 (2022)  <br>
+Quartil: Q2 - 66/145 - Computer Science, Artificial Intelligence | Q2 - 46/110 - Computer Science, Interdisciplinary Applications | 2022  <br>
 
 ## Datasets
 
